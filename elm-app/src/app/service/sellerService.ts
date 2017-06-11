@@ -1,7 +1,7 @@
 import {Http} from "@angular/http";
 import 'rxjs/add/operator/toPromise';
 import {Injectable} from "@angular/core";
-import {Seller} from "../model/seller";
+import {Seller} from "../model/seller/seller";
 /**
  * Created by wangao on 2017/6/8.
  */
@@ -9,7 +9,7 @@ import {Seller} from "../model/seller";
 @Injectable()
 export class SellerService {
 
-  private url: string = 'api/seller';
+  private url = 'api/seller';
 
   constructor(private http: Http) { }
 

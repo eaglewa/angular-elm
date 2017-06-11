@@ -1,0 +1,44 @@
+.header{
+  position: relative;
+  background: rgba(7,17,27,0.5);
+  color: #fff;
+  overflow: hidden;
+  .content-wrapper{
+    position: relative;
+    display: flex;
+    padding: 24px 12px 18px 24px;
+    .avatar{
+      img {
+        border-radius: 2px;
+      }
+    }
+    .content{
+      margin-left: 16px;
+      .title{
+        margin-top: 2px;
+        margin-bottom: 8px;
+        .brand{
+          display: inline-block;
+          vertical-align: top;
+          width: 30px;
+          height: 18px;
+          background-size: 30px 18px;
+          background-image: url("img/brand@2x.png");
+          background-repeat: no-repeat;
+        }
+        .name{
+          margin-left: 6px;
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: bold
+        }
+      }
+      .description{
+        font-size: 12px;
+        margin-bottom: 10px;
+        line-height: 12px;
+        font-weight: 100;
+      }
+    }
+  }
+}

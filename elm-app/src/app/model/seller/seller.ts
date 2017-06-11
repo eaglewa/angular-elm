@@ -3,9 +3,6 @@
  */
 export class Seller {
 
-  name: string;
-  avater: string;
-
   constructor(){
 
   }
