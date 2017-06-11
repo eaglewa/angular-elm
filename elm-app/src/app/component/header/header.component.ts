@@ -1,5 +1,6 @@
 import {Component, Injectable, OnInit} from '@angular/core';
 import {SellerService} from "../../service/sellerService";
+import {Seller} from "../../model/seller";
 
 @Component({
   selector: 'app-header',
@@ -9,11 +10,16 @@ import {SellerService} from "../../service/sellerService";
 @Injectable()
 export class HeaderComponent implements OnInit {
 
-  constructor(private sellerService:SellerService) { }
+  seller: Seller;
+
+  constructor(private sellerService: SellerService) {
+
+  }
 
   ngOnInit() {
-    let obj:object = this.sellerService.getSeller();
-    console.log("获取seller", obj);
+    this.sellerService.getSeller().then(seller => {
+      this.seller = seller
+    });
   }
 
 }
