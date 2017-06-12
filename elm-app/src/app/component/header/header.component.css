@@ -1,0 +1,29 @@
+.header{
+  background-color: rgba(7,17,27,0.5);
+  blur: 10px;
+  height:300px;
+  }
+.header-middle{
+
+}
+.header-middle .pic{
+  border-radius: 4px;
+  display:inline-block;
+  position:absolute;
+  top:48px;
+  left:48px;
+}
+.header-middle p{
+ position: relative;
+  left:219px;
+}
+.header-middle .name1{
+  font-size: 32px;
+  color: rgb(255,255,255);
+  font-weight: bold;
+  hine-height:36px;
+}
+.announce{
+  position: relative;
+  left:219px;
+}
