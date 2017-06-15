@@ -11,6 +11,11 @@
       <div class="description">
         {{seller.description + ' / ' + seller.deliveryTime + '分钟送达'}}
       </div>
+      <div class="supports" *ngIf="seller.supports">
+        <span class="icon"></span>
+        <span class="description">{{seller.supports[0].description}}</span>
+      </div>
     </div>
   </div>
+
 </div>

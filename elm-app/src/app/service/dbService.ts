@@ -19,7 +19,7 @@ export class DbService implements InMemoryDbService {
       "supports": [
         {
           "type": 0,
-          "description": "在线支付满28减5"
+          "description": "在线支付满28减5, 满50减10"
         },
         {
           "type": 1,
