@@ -16,6 +16,14 @@
         <span class="description">{{seller.supports[0].description}}</span>
       </div>
     </div>
+    <div class="support-count" *ngIf="seller.supports">
+      <span class="count">{{seller.supports.length + '个'}}</span>
+      <i class="angle right icon"></i>
+    </div>
   </div>
-
+  <div class="bulletin-wrapper">
+    <span class="bulletin-title"></span>
+    <span class="bulletin-text">{{seller.bulletin}}</span>
+    <i class="angle right icon"></i>
+  </div>
 </div>
